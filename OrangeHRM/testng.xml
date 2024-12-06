@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.OrangeHRM.GenericScripts.ListernersClass"></listener>
+	</listeners>
+<parameter name="Browser" value="chrome"/>
+<parameter name="BrowserInitialization" value="chrome"/>
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.OrangeHRM.Runnerscripts.SmokeTC01"/>
+    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
